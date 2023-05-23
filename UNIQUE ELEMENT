@@ -1,0 +1,27 @@
+int findUnique(int *arr, int n)
+{   
+  
+//   int count = 0;
+//   int g;
+//   int h;
+//   for(int i = 0;i<n;i++){
+//     for(int j = i+1;j<n;j++){
+//       if(arr[i] == arr[j]){
+//         count++;
+//       }
+//     }
+//     if ((g - count) != 0) {
+//       h = arr[i];
+//     }
+//     g = count;
+//     count = 0;
+//   }
+//   return h;
+// }
+
+   int ans;
+   for (int i = 0; i < n; i++) {
+     ans = ans ^ arr[i];
+   }
+   return ans;
+}
